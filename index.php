@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<<<<<<< HEAD:index.php
+
     aaa
     <script src="./assets/js/app.js"></script>
-=======
-    a
-    <script src="main.js"></script>
->>>>>>> 71b7b9beb926276a9e9bf157b472605594572ab2:index.html
+
 </body>
 </html>
