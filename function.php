@@ -61,7 +61,15 @@ class Calendar {
     foreach ($period as $day) {
       if ($day->format('w') === '0') { $body .= '</tr><tr>'; }
       $todayClass = ($day->format('Y-m-d') === $today->format('Y-m-d')) ? 'today' : '';
-      $body .= sprintf('<td class="youbi_%d %s">%d</td>', $day->format('w'), $todayClass, $day->format('d'));
+      $body .= sprintf(
+      '<td class = "youbi_%d %s">
+      %d<br>
+      <div class = "buttons">
+        <button class="reserve"><a href="http://localhost/php/original/reserve/reserve.html">予約</a></button>
+        <button class="delete"><a href="">削除</a></button>
+      </div>
+    </td>'
+    , $day->format('w'), $todayClass, $day->format('d'));
     }
     return $body;
   }
@@ -77,3 +85,5 @@ class Calendar {
   }
 
 }
+
+
