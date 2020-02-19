@@ -65,7 +65,7 @@ class Calendar {
       '<td class = "youbi_%d %s">
       %d<br>
       <div class = "buttons">
-        <button class="reserve"><a href="http://localhost/php/original/reserve/reserve.html">予約</a></button>
+        <button class="reserve"><a href="http://localhost/php/original/reserve/">予約</a></button>
         <button class="delete"><a href="">削除</a></button>
       </div>
     </td>'
