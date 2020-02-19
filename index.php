@@ -1,20 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-
-    aaa
-    <script src="./assets/js/app.js"></script>
-
-</body>
-</html> -->
-
 <?php
 
 require 'function.php';
@@ -25,6 +8,8 @@ function h($s) {
 
 $cal = new \MyApp\Calendar();
 
+// var_dump($cal);
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -34,6 +19,9 @@ $cal = new \MyApp\Calendar();
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <header>
+        <h2>予約カレンダー</h2>
+    </header>
   <table>
     <thead>
       <tr>
@@ -52,7 +40,7 @@ $cal = new \MyApp\Calendar();
         <td>Fri</td>
         <td>Sat</td>
       </tr>
-      <?php $cal->show(); ?>
+        <?php $cal->show();?>
     </tbody>
     <tfoot>
       <tr>
@@ -60,5 +48,6 @@ $cal = new \MyApp\Calendar();
       </tr>
     </tfoot>
   </table>
+  <footer>©︎ミサスタジオ</footer>
 </body>
 </html>
