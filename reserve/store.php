@@ -7,19 +7,22 @@
 
 
 // // ファイルの読み込み
-// require_once('dbconnect.php');
-// require_once('function.php');
+ require_once('../dbconnect.php');
+ require_once('../function.php');
 
 // データの受け取り
-$reserve = $_POST['reserv[time]'];
+// $data = $_POST['reserv[time]'];
+// $date = $_POST['reserv[date]'];
+// reserv[time],users reserv[date],
 $name = $_POST['お名前'];
 $tel = $_POST['電話番号'];
 $mail = $_POST['メールアドレス'];
-$currentTime = date("Y/m/d H:i:s");
+// $currentTime = date("Y/m/d H:i:s");
+
 
 // DBへのデータ保存
-$stmt = $dbh->prepare('INSERT INTO tasks (reserv[time], お名前, 電話番号 , メールアドレス) VALUES (?, ?, ?)');
-$stmt->execute([$reserve, $name, $tel, $mail, $currentTime]);
+$stmt = $dbh->prepare('INSERT INTO users (name, tel, email) VALUES (?, ?, ?)');
+$stmt->execute([$name, $tel, $mail]);
 
 // リダイレクト
-// header('location:index.php');
+header('location:http://localhost/php/original/index.php');
