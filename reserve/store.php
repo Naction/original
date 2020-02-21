@@ -24,6 +24,14 @@ $mail = $_POST['メールアドレス'];
 $stmt = $dbh->prepare('INSERT INTO users (name, tel, email) VALUES (?, ?, ?)');
 $stmt->execute([$name, $tel, $mail]);
 
+$date = $_POST['date'];
+$user_id = 1;
+
+$stmt = $dbh->prepare('INSERT INTO reserves (date ,user_id ) VALUES (?, ?)');
+$stmt->execute([$date ,$user_id]);
+
+
+
 
 // リダイレクト
 header('location:http://localhost/php/original/index.php');
