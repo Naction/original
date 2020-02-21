@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD:reserve/index.php
-// var_dump($_GET['date']);die;
-
-?>
-=======
 use MyApp\Calendar;
 
 require_once('../function.php');
@@ -14,7 +9,6 @@ $reserveDate = $_GET['date'];
 ?>
 
 
->>>>>>> master:reserve/index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,16 +38,10 @@ $reserveDate = $_GET['date'];
                   <br>
                 <th>ご予約日時</th>
                 <td>
-<<<<<<< HEAD:reserve/index.php
-                
-             <!-- <input type="hidden" name="reserv[date]" value="2020-2-18"><input type="hidden" name="reserv[time]" value="0"> -->
-                  </td>
-=======
                   <input type="date" name="date" value="<?= $reserveDate ?>">
                 </td>
                   <input type="hidden" name="reserv[date]" value=""><input type="hidden" name="reserv[time]" value="0">
                 </td>
->>>>>>> master:reserve/index.html
               </tr>
 
               <tr>
