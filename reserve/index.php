@@ -37,9 +37,11 @@ $reserveDate = $_GET['date'];
               <tbody><tr>
                   <br>
                 <th>ご予約日時</th>
-                <td><input type="date" name="date" value="<?= $reserveDate ?>"></td>
-             <input type="hidden" name="reserv[date]" value=""><input type="hidden" name="reserv[time]" value="0">
-                  </td>
+                <td>
+                  <input type="date" name="date" value="<?= $reserveDate ?>">
+                </td>
+                  <input type="hidden" name="reserv[date]" value=""><input type="hidden" name="reserv[time]" value="0">
+                </td>
               </tr>
               <tr>
                 <th>お名前</th>
