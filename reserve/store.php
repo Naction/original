@@ -24,5 +24,6 @@ $mail = $_POST['メールアドレス'];
 $stmt = $dbh->prepare('INSERT INTO users (name, tel, email) VALUES (?, ?, ?)');
 $stmt->execute([$name, $tel, $mail]);
 
+
 // リダイレクト
 header('location:http://localhost/php/original/index.php');

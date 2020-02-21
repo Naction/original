@@ -1,3 +1,14 @@
+<?php
+
+use MyApp\Calendar;
+
+require_once('../function.php');
+
+$reserveDate = $_GET['date'];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +38,10 @@
                   <br>
                 <th>ご予約日時</th>
                 <td>
-                2020年2月18日 
-             <input type="hidden" name="reserv[date]" value="2020-2-18"><input type="hidden" name="reserv[time]" value="0">
-                  </td>
+                  <input type="date" name="date" value="<?= $reserveDate ?>">
+                </td>
+                  <input type="hidden" name="reserv[date]" value=""><input type="hidden" name="reserv[time]" value="0">
+                </td>
               </tr>
               <tr>
                 <th>お名前</th>
