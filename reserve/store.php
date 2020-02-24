@@ -32,6 +32,5 @@ $stmt->execute([$date ,$user_id]);
 
 
 
-
 // リダイレクト
 header('location:http://localhost/php/original/index.php');

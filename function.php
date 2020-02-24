@@ -71,7 +71,7 @@ class Calendar {
       %d<br>
       <div class = "buttons">
         <button class="reserve"><a href="http://localhost/php/original/reserve/?date=%s">予約</a></button>
-        <button class="delete"><a href="">削除</a></button>
+        <button class="delete"><a href="http://localhost/php/original/delete.php">削除</a></button>
       </div>
       </td>'
     , $day->format('w'), $todayClass, $day->format('d'), $day->format('Y-m-d'));
